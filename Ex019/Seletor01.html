@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores personalizados</title>
+    <link rel="stylesheet" href="stylesas.css">
+</head>
+<body>
+    <!-- nós podemos atribuir um id a algo quando queremos adicionar um codigo css sem mecher diretamente no html, dessa forma, podemos criar uma declaração separada das demais utilizando por exemplo h1#principal, basicamente ele vai procurar uma tag h1 que possua o id de "principal", apos isso é só continuar o codigo css normalmente, outra coisa é que quando é id é algo unico e quando é class é multiplo, ou seja, só pode haver 1 id com um nome especifico, mas pode haver varias class com o mesmo nome, o class é categorizado pelo "." e não é necessario adicionar o nome da tag, apenas a classe
+     exemplo:
+     id = h1#principal
+     class = .basico -->
+    <!-- podemos atribuir mais de uma classe para a mesma tag, para isso apenas adicionamos o nome da classe adicional ao lado dessa forma:
+     <h1 class="principal destaque"> 
+    como pode ver eu adcionei a classe "destaque" ao lado da classe "principal" -->
+    <h1 id="principal">Criando sites com HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML basico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui <span class="basico destaque">dignissimos quibusdam expedita</span> nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+    <h2 class="intermediario">HTML intermediario</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui dignissimos quibusdam expedita nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui dignissimos quibusdam expedita nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS basico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui dignissimos quibusdam expedita nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+    <h2 class="intermediario">CSS intermediario</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui dignissimos quibusdam expedita nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+    <h2 class="avancado">CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam dolorem nulla impedit veniam repellat repellendus praesentium cum blanditiis, architecto qui dignissimos quibusdam expedita nobis ipsam explicabo incidunt. Distinctio, totam!</p>
+</body>
+</html>

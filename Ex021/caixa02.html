@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0px;
+        }
+
+        h1 {
+            background-color: rgb(255, 255, 255);
+            border: 5px groove rgba(151, 207, 255, 0.264);
+            text-align: center;
+            padding: 10px;
+            margin: 20px 10px;
+            /* O border radius fara um arredondamento nas bordas de uma caixa, podemos configurar quais bordas serão arredondadas seguindo o seguinte padrão: top-left -> top-right -> bottom-right -> bottom-left */
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 25%);
+        }
+
+        nav {
+            background-color: rgb(66, 87, 106);
+            padding: 10px;
+            box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.49);
+        }
+        
+        nav > a {
+            display: inline-block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(87, 116, 141);
+            color: azure;
+            padding: 10px 50px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            text-decoration: none;
+            outline-style: groove;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            border: 5px groove rgba(151, 207, 255, 0.264);
+            padding: 10px;
+            margin: 20px 10px;
+            text-align: justify;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px 0px rgb(0% 0 0 / 0.227);
+        }
+
+        main > section {
+            background-color: rgb(208, 208, 208);
+            padding: 1px 20px;
+            margin: 20px 20px;
+        }
+
+        section#Assuntos {
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        section#Noticias {
+            border-radius: 0px 0px 20px 20px;
+        }
+        
+        aside {
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 140px 10px 10px 10px;
+        }
+
+        aside > p {
+            background-color: rgb(173, 173, 173);
+            padding: 5px 20px;
+            margin: -10px -30px;
+            border-radius: 0px 0px 20px 20px;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    <div></div>
+    <span></span>
+    -->
+    <!-- antigamentes os sites eram desenvolvidos colocando uma div dentro de outra, como se tivessem agrupando tags, e a div é uma das principais tags para desenvolvimento de sites, por essa forma de criar um site não ser semantica, foram criados comandos personalizados de div que servem para organizar e manter a semantica no codigo.
+    Os comandos de div novos são organizados em uma certa sequencia:
+    <header>
+    <main>
+    <footer>
+    os comandos acima são os comandos principais, o header é o cabeçalho, o main é o conteudo e o footer é o rodapé agora vamos começar a criar um site tendo isso como base: -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <!-- responsavel pelos Links -->
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <article>
+                <h2>Maçã</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore aliquam quos non deserunt repudiandae! Natus obcaecati atque expedita praesentium error nihil a impedit beatae, hic labore mollitia, dignissimos deserunt.</p>
+            </article>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, accusantium assumenda. Explicabo rerum quasi placeat neque voluptas, autem, similique dicta odit quam expedita sapiente tempore! Incidunt quos optio saepe reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum alias animi odio voluptate, ipsam magnam ratione iure sint cupiditate fugit. Voluptatum nihil, vitae sequi aut numquam esse ullam deleniti suscipit.
+                </p>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis, vero reprehenderit veniam minima cumque cupiditate dolores laborum placeat id eius quae non beatae natus rerum? Odit doloremque deleniti a!
+                </p>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero ducimus accusantium quisquam fugiat amet dolorem. Doloremque facere sit quisquam, libero magnam quibusdam nobis aliquam similique blanditiis eligendi eaque incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aspernatur ipsam vitae quidem eius quibusdam itaque. Nihil aperiam in et repellendus possimus temporibus, alias doloribus reiciendis dolore quidem quaerat obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, natus praesentium laudantium quae minus odio omnis doloribus dolor ex totam. Tenetur ducimus nam odio blanditiis quo vel id minima vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nemo aspernatur, praesentium harum voluptatem accusamus facere adipisci quibusdam dicta consequatur? Nostrum excepturi ex voluptatibus iure molestias consectetur iste, expedita sapiente. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, alias est. Veritatis, in? Porro molestias, in assumenda laborum fuga odit voluptatum rem quaerat nesciunt corporis placeat, distinctio quasi odio temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel labore, illum porro fugit reiciendis quidem quas doloribus quasi animi. Non amet enim voluptatem ducimus eius commodi sint quos distinctio quidem blablabla.
+                </p>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum aut non beatae soluta blanditiis nulla libero laborum ipsum eligendi neque. Quia neque rerum cumque veniam aliquam autem voluptates at reiciendis?
+                </p>
+                <aside>
+                    <p>Escrito por rodolfo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site de exemplo do curso em video</p>
+    </footer>
+    <!-- ainda podemos utilizar divs para a criação de sites, porem não é o ideal -->
+</body>
+</html>

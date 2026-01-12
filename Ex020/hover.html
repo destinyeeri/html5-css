@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <!-- podemos utilizar o hover de diversas formas, neste exemplo faremos um texto oculto que se revela quando passamos o mouse na div -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        div {
+            background-color: lightgray;
+            width: 145px;
+        }
+
+        div > p {
+            display: none;
+        }
+        
+        div:hover > p {
+            background-color: white;
+            display: block;
+            color: black;
+            font-weight: normal;
+        }
+
+        div:hover {
+            background-color: grey;
+            width: 154px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        /* o sinal de > indicara que tudo aquilo que estiver dentro da div seja afetado em determinada ação, por exemplo, no caso do comando: 
+        div > p {
+            display: none;
+        } 
+        fara com que todo paragrafo(<p></p>) que esteja dentro de uma div fique oculto 
+        */
+        /* com isso podemos combinar diferentes ações, assim como fizemos acima, ocultamos o paragrafo e então fizemos com que caso ele passemos o mouse nele, ele ficasse visivel */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>texto escondido...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>

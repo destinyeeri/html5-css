@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            padding: 10px 10px 10px 10px; 
+
+            /* 2 - o margin é configurado da mesma forma que o padding, porem podemos fazer com que ele calcule altomaticamente para que centralize na tela utilizando margin: auto; mesmo depois desse comando ainda sera possivel configurar algumas coisas no margin, como o margin-bottom e top*/
+            margin: auto;
+            margin-bottom: 20px;
+
+            margin: 10 auto 10 auto;
+
+            /* 3 - também existe o outline, que é configurado da mesma forma que o border, basicamente, ele fara com que seja criada uma borda em volta da borda, e sera calculado de acordo com a borda, sempre estando colada nela */
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: rgb(130, 130, 130);
+
+            outline: 10 solid rgb(130, 130, 130);
+        }
+
+        a {
+
+            /* 4 - todos os comandos acima podem ser simplificados ao escrever o nome do comando e colocando todas as configurações dentro dele, dessa forma: 
+            border: 10px solid black; */
+
+            /* 5 - se for um comando que tenha sua estrutura parecida com o padding, como por exemplo o margin, temos que seguir a ordem: cima, direita, baixo, esquerda, assim como o ponteiro de um relogio, caso o tamanho seja igual para todas as direções apenas é necessario escrever uma unica vez, por exemplo: padding: 10px; 
+            também podemos colocar 2 valores diferentes dentro do padding, isso fara com que o top e o bottom sejam o primeiro valor, e o right e left sejam o segundo valor, essas regras se aplicam a todos os comandos mostrados aqui, sendo assim, oque fazemos se precisarmos usar o comando auto para centralizar algo na pagina, é simples, é só colocar o auto no right e left e configurar o resto a sua maneira:
+            margin: 10px auto 20px auto; */
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            border: 10px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são um exemplo de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> vamos ver como isso funciona</p>
+    <!-- 1 - em display temos algumas opções, o block seria o box-level e o inline-block seria o inline-level, se utilizarmos as ferramentas de desenvolvedor em um navegador, ou simplesmente inspecionar o site, podemos ver isso de forma mais pratica, caso voce procure e encontre o h1/titulo por exemplo em elementos, voce vera que ja existem configurações, e entre elas o display que aparecera da seguinte forma:
+     - display: block; 
+    outras informações também aparecerão como uma imagem de modelo de caixa de algo, passar o mouse nessa imagem mostrara onde aquela parte esta mexendo no site
+    todas essas informações são essenciais, pois são muito importantes para o teste do site
+    -->
+</body>
+</html>

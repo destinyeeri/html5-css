@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /* para baixar uma fonte procuramos um site com fontes como por exemplo o google fonts, escolhemos uma fonte, 
+        clicamos em get font e então download, apos baixar, para utiliza-la precisaremos adicionar a pasta do visual code que
+        corresponde aonde vamos utilizar a fonte, apos adicionar, utilizamos o comand @font-face, isso servira para criar uma fonte com
+        nome personalizado com base no arquivo utilizado, em src colocamos o nome dos arquivos, e em format() o tipo correspondete ao
+        formato do arquivo, apos terminar de preencher essas informações adicione um font-weight e um font-style, e em font-family
+        escreva um nome para a sua fonte. */
+        /* normalmente ao invez de jogar os arquivos dentro dessa pasta, criamos uma pasta dentro da mesma antes disso, e então colocamos
+        dentro da nova pasta. Em casos como esse, em url escrevemos (NomeDaPasta/PlaywriteUSTradGuides-Regular.ttf) */
+        @font-face {
+            font-family: 'WriteUS';
+            src: url(PlaywriteUSTradGuides-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        /*
+        tipos de format():
+            opentype (otf)
+            Truetype (ttf)
+            Embedded-opentype
+            truetype-aat (apple advanced typography)
+            svg
+        */
+        }
+        body {
+            font-family: 'WriteUS', Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor iusto facere ex mollitia alias consequatur non dignissimos a, sed doloremque eum? Recusandae repellendus possimus, aut tempore vero laborum repellat!</p>
+</body>
+</html>

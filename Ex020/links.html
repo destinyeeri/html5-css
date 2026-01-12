@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* seletores personalizados
+        id = #
+        class = .
+        pseudo-class = :
+        pseudo-element = ::
+        clildren = >
+        */
+        /* 
+        outros tipos de pseudo classe que tão podemos utilizar, são visited e active, o visited, por exemplo caso cliquemos em um link mas queiramos que ele chame mais atenção, nesse caso utilizamos visited, o active pode ser utilizado quando passemos o mouse em cima do link, dessa forma podemos personaliza-lo, alem disso, caso va modificar um link, lembre-se que o link é uma tag também, por isso precisamos marca-lo no css para altera-lo, assim como fizemos no exemplo abaixo
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(0, 255, 170);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(0, 255, 0);
+        }
+
+        a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+        /*
+        agora vamos falar dos pseudo elementos, eles funcionam com classes e elementos id, ou nenhum dos dois, para utilizar um pseudo elemento precisamos utilizar :: apos isso teremos diferentes opções de pseudo-elementos diferentes, no caso do before e after, ele fara com que a gente costumize o espaço daquela tag que estiver no inicio e fim dela, no caso em que vemos abaixo, adicionamos conteudo extra com o Content: '' ; e costumizamos esse conteudo para aparecer de uma forma diferente na mesma tag.
+        */
+        .especial {
+            background-color: rgb(196, 255, 255);
+        }
+
+        .especial::before {
+            content: '⇨ ';
+            color: black;
+        }
+
+        .especial::after {
+            content: ' ⇦';
+            color: black;
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            color: rgb(186, 255, 232);
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.roblox.com/pt/games/10976925411/Modern-Art-Museum" target="_blank" >Jogo do roblox</a></li>
+        <li><a href="https://x.com/destis_dest" target="_blank" class="especial">Perfil do twitter</a></li>
+        <li><a href="https://open.spotify.com/user/31e4oh6da66nm5rqowyuxlz2r26m" target="_blank" >Perfil do spotify</a></li>
+    </ul>
+</body>
+</html>

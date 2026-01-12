@@ -1,0 +1,106 @@
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: BB;
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
+body {
+    background-color: rgb(160, 255, 212);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 128, 0, 0.376), rgb(0, 70, 0));
+    color: white;
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.601);
+    font-weight: bold;
+}
+header > h1 {
+    font-family: 'BB', Cambria, Arial, Helvetica, sans-serif ;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+header > p {
+    font-size: 15px;
+    padding-bottom: 0px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+header > nav {
+    text-align: left;
+}
+header > nav > a {
+    color: rgb(68, 152, 114);
+    margin-right: 20px;
+    text-decoration: none;
+}
+header > nav > a:hover {
+    color: white;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    text-align: justify;
+    justify-self: center;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+article.texto > h1, h2 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+}
+imagem1, imagem2, imagem3 {
+    width: 100%;
+}
+h2 {
+    background: linear-gradient(to right, rgba(0, 255, 128, 0.523), white );
+    padding: 0px 10px;
+}
+main > section > article > p {
+    text-indent: 20px ;
+}
+section#conteudovideolink > div#video {
+    background-color: rgb(0, 55, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+video {
+    width: 80%;
+}
+
+section#conteudovideolink > nav {
+    background-color: rgb(168, 255, 168);
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+section#conteudovideolink > nav > h3 {
+    background-color: green;
+    padding: 10px;
+    margin: 10px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+section#conteudovideolink > nav > div {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+div#space {
+    margin: auto;
+    margin: 0px 20px;
+}
+
+footer {
+    background-color: rgb(39, 39, 99);
+    color: white;
+    text-align: center;
+}

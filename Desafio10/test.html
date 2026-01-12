@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* o tamanho minimo do width sempre deve ser 320px ou menos, que é o tamanho de um celular antigo, e o maximo depende de como voce quer que sua pagina apareça */
+            min-width: 320px;
+            max-width: 800px;
+            /* o margin auto centraliza o conteudo da pagina beseado no width */
+            margin: auto;
+        }
+
+        img {
+            /* existem 2 formas de adaptar o tamanho de uma imagem ou video, a primeira é adaptando o width para 100% da area, dessa forma a imagem vai se adaptar a area em que ela foi colocada */
+            width: 100%;
+            /* a segunda forma é basicamente adicionar a tag img dentro da tag picture e acima adicionar um source media, dessa forma voce pode carregar uma imagem nova dependendo do tamanho da pagina*/
+            /* é importante apontar que em source media voce deve mudar de min-width para max-width */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>teste</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo optio neque eum quos ducimus eligendi nihil in, rem reiciendis deleniti, consequatur consectetur. Modi sed accusantium ullam vero officia amet minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur unde vero asperiores doloremque libero non sunt eligendi dignissimos inventore accusamus, voluptas recusandae. Sapiente cumque repellat hic repudiandae ullam provident ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sint iusto iste ipsam quibusdam aspernatur, tempore nisi aperiam quod explicabo assumenda recusandae eveniet cupiditate? Nulla consequuntur aut suscipit ipsa aspernatur?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum placeat incidunt quod, quisquam cumque tenetur architecto quidem ratione voluptas veniam porro officia laboriosam sunt ad eveniet voluptatum? Accusamus, similique facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consectetur quod, aliquam similique praesentium quia repellat iste nulla, quam corrupti rem. Suscipit earum error culpa eum molestiae ab, quaerat tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex recusandae odit provident illo excepturi vitae, doloremque asperiores iste suscipit autem! Sit dicta dolorem eveniet quae deserunt? Molestias, vitae! Minima.</p>
+    </main>
+</body>
+</html>

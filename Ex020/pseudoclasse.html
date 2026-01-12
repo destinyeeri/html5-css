@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses em html</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgrey;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /* as pseudoclasses são baseadas nos :, e elas representam um estado de um elemento ou classe, por exemplo: */
+        div:hover {
+            background-color: grey;
+        }
+        /* a pseudoclasse acima fara com que todo espaço de uma div ao qual o meu mouse passar em cima, ficara um tom de cinza mais escuro */
+    </style>
+</head>
+<body>
+    <!-- antes vamos ver oque é uma div, basicamente, divs são linhas como paragrafos, a diferença é que são usadas para separar ao invez de pular um paragrafo, cada div percorre uma linha inteira da tela, quando adicionamos uma div e logo abaixo outra, temos espaços da tela diferentes, elas podem ser utilizadas para muitas coisas como por exemplo, criar espaços para parte de design do site, por exemplo, podemos criar uma div, e então na parte do css aumentar a area de prenchimento dela na tela e adicionar algo dentro, como por exemplo uma imagem. -->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
