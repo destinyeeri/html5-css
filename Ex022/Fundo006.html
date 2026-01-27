@@ -8,19 +8,27 @@
 
         body {
             height: 98vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
+            
             /* quando estamos ajustando imagens de fundo para o site, um problema comum é que a imagem não encaixa no site, para isso existem varias soluções, alguns usam o height: 98vh; para pegar a tela inteira e então colocam 100% 100% em background size, porem isso fara com que a imagem acabe se distorcendo, isso é usado mais para fundos sem imagem, para resolver esse problema temos duas outras opções para colocar em background size: countain e cover.
             o countain fara com que a imagem apareça 100% da mesma na tela, sem nenhum corte na imagem, mas isso pode fazer com que, caso a imagem não tenha o tamanho certo, gere barras pretas dependendo do height e width da tela.
             o cover fara com que a imagem cubra o maximo possivel da tela sem distorcer a mesma, dessa forma a resolução pode ficar um pouco baixa as vezes, mas em compensação a imagem sempre vai cobrir a area em que foi colocada por completo, existem alguns problemas no entanto, por exemplo: se o conteudo for muito grande a imagem pode não ser capaz de cobri-lo, dessa forma as barras voltam. */
+
+            /* background-size: cover;
+            background-attachment: fixed; */
+
+
+            /* shorthand - background:
+            color > image > position > repeat > [size(pode não funcionar)] > attachment */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
-        }
         
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -32,7 +40,16 @@
 <body>
     <main>
         <h1>teste imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihilorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ip
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae nihil consequuntur at culpa fuga totam voluptas rem cupiditate hic repellendus quibusdam ab qui assumenda ratione minus, excepturi repellat blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil minus accusantium dolores consequuntur sint reprehenderit adipisci? Veritatis corporis saepe laboriosam veniam deserunt rerum repudiandae. Quis at sequi accusantium officia ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihilorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus rem aperiam quia atque delectus omnis, quisquam quod veniam consequatur totam tenetur officiis culpa impedit facere vitae quam nisi nihil
+        Lorem ip
+        </p>
     </main>
 </body>
 </html>
