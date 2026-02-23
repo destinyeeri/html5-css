@@ -17,7 +17,13 @@
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -43,10 +49,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr> <!-- linha -->
-                <th>Estado</th> <!-- espaço de titulo -->
-                <th>População</th>
+                <th scope="col" >Estado</th> <!-- espaço de titulo -->
+                <th scope="col" style="width: 300px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -65,7 +72,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>84.352.783</strong></td>
             </tr>
         </tfoot>
