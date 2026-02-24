@@ -25,6 +25,15 @@
             padding: 10px;
             background-color: lightgray;
         }
+        /* 
+        o comando que vemos abaixo fara com que uma linha em duas seja de cor diferente, podemos alterar para outras frações ao aumentar ou diminuir o numero presente(2n = 1/2, 3n = 1/3...)
+        */
+        /* 
+        também podemos alterar o número para par ou impar, sendo ODD = impar e EVEN = par (ambos em minusculo), é possivel realizar o mesmo efeito ao colocar o número com n na frente e logo após -1, exemplo: 2n-1
+        */
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
 
         thead, tfoot {
             background-color: gray;
@@ -59,21 +68,33 @@
         <tbody>
             <tr>
                 <td>São Paulo</td> <!-- espaço -->
-                <td class="num">45.919.049</td>
+                <td class="num">46 081 801</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num">21.168.791</td>
+                <td class="num">21 393 441</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">17.264.943</td>
+                <td class="num">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">total de habitantes</th>
-                <td class="num"><strong>84.352.783</strong></td>
+                <td class="num"><strong>122.693.476</strong></td>
             </tr>
         </tfoot>
     </table>
