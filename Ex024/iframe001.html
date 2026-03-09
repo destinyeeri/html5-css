@@ -8,5 +8,19 @@
 <body>
     <h1>Testando o uso de iframe</h1>
     <p>acessando o site do <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-1-o-iframe-ainda-pode-ser-usado/" frameborder="0"></iframe> para aprender a programar</p>
+    <!-- 
+    o iframe é uma forma de adicionar abas dentro do proprio site 
+    -->
+    <!-- 
+    dentro da caixa do iframe, é possivel adicionar comandos extras, o recomendado é adicionar o comando para links: <a>, dessa forma, caso o iframe não funcione, o link substituira ele
+    -->
+    <p>exemplo: 
+        <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-1-o-iframe-ainda-pode-ser-usado/" frameborder="0">
+            <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-1-o-iframe-ainda-pode-ser-usado/" target="_blank">link</a>
+        </iframe>
+    </p>
+    <!--
+    voce pode adicionar outros comandos dentro do iframe, como height e width e também o comando scolling que muda a forma como a barra de scrolling aparecera: auto(aparece se o conteudo for grande demais), yes(sempre aparece), no(aparece dependendo do navegador) 
+    -->
 </body>
 </html>
