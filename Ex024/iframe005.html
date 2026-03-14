@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus corrupti non alias sit, quod eligendi eos adipisci recusandae ut! Voluptatem ipsum repellat numquam nemo veritatis in fuga aliquam, nostrum blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reiciendis sed beatae deserunt at ex neque explicabo fugit rem expedita, ad illum numquam ut. Doloremque dolor similique sit blanditiis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe voluptates facere expedita hic neque debitis rem quos omnis soluta id modi eum suscipit sunt, eveniet nesciunt, pariatur dolorum commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestiae reprehenderit cupiditate dolorem quam sapiente expedita tenetur mollitia, consequatur aspernatur nam? Repellendus eligendi, doloribus dolor molestiae ipsam blanditiis illum quibusdam.</p>
+    <!-- 
+    A tag Sandbox é responsavel pela segurança de quais informações serão transmitidas entre os sites, etc... ao colocar o Sandbox para receber Sandbox (sandbox="sandbox") ele ira ativar todos as chaves de segurança isso fara com que seja impossivel executar qualquer ação do site presente no iframe, para limitar para apenas algumas coisas precisamos adicionar dentro das aspas as informações que estão liberadas ao invez de sandbox. 
+    A tag referrerpolicy é responsavel pela segurança da informação presente no iframe, o padrão dessa tag(algo que esta sempre ativo) é referrerpolicy="no-referrer-when-downgrade", caso queira deixar um pouco mais limitado aquilo que venha aparecer no iframe, remova o -when-downgrade, recomendado sempre fazer isso.
+    -->
+    <iframe src="Paginas_extras/Pag004.html" frameborder="0" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+    <!-- 
+    . O allow-same-origin diz para o sistema que aquilo presente no iframe esta no mesmo servidor que a pagina, portanto é permitido
+    . O allow-forms permite formularios
+    . O allow-scripts permite scripts, oque é necessario para a execução de formularios
+    -->
+        <a href="Paginas_extras/Pag004.html" target="_blank"></a>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus corrupti non alias sit, quod eligendi eos adipisci recusandae ut! Voluptatem ipsum repellat numquam nemo veritatis in fuga aliquam, nostrum blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam reiciendis sed beatae deserunt at ex neque explicabo fugit rem expedita, ad illum numquam ut. Doloremque dolor similique sit blanditiis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe voluptates facere expedita hic neque debitis rem quos omnis soluta id modi eum suscipit sunt, eveniet nesciunt, pariatur dolorum commodi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestiae reprehenderit cupiditate dolorem quam sapiente expedita tenetur mollitia, consequatur aspernatur nam? Repellendus eligendi, doloribus dolor molestiae ipsam blanditiis illum quibusdam.</p>
+</body>
+</html>

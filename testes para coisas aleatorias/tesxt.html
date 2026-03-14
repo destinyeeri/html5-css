@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 98vh;
+            background-image: linear-gradient(to top, black, red);
+            background-color: black;
+            color: red;
+            animation: olho 1s infinite alternate;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: 30%;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        @keyframes olho {
+            0% { background-image: url(imagens/1.png); }
+            20% { background-image: url(imagens/2.png); }
+            25% { background-image: url(imagens/3.png); }
+            40% { background-image: url(imagens/4.png); }
+            45% { background-image: url(imagens/5.png); }
+            50% { background-image: url(imagens/6.png); }
+            70% { background-image: url(imagens/7.png); }
+            75% { background-image: url(imagens/8.png); }
+            80% { background-image: url(imagens/9.png); }
+            95% { background-image: url(imagens/10.png); }
+            100% { background-image: url(imagens/1.png); }
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="font-size: 3em;"></div>
+    <script>
+        async function criarElementos() {
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            const container = document.getElementById("container");
+
+            for (let i = 1; i <= 500; i++) {
+                const item = document.createElement("div");
+                item.className = "item";
+                item.textContent = `You're being whatched`;
+                container.appendChild(item);
+                await sleep(1000); // ✅ Agora funciona
+            }
+        }
+        criarElementos();
+    </script>
+</body>
+</html>
