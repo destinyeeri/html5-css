@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o autocomplete adiciona informações salvas do navegador as caixas(pode ser utilizado diretamente no input) -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <!-- Required é uma condição que torna a tag utilizada para determinada função, obrigatoria, utilizavel apenas para tags que possam ser preenchidas com informação, como por exemplo o input:text -->
+             <!--  também existem outras condições como o minlength e o maxlength que configuram a quandidade minima e maxima de caracteres e o size que configura a o tamanho da caixa baseado em uma quantidade escolhida de letras, por exemplo: size 10 seria uma caixa com o tamanho de um espaço de 10 letras como o maximo, agora listarei todas as condições ensinadas na aula e suas descrições: -->
+               <!-- 
+                required(torna um input obrigatório)
+                min/maxlength(altera a quantidade minima e maxima de caracteres)
+                size(muda o tamanho da caixa)
+                placeholder(adiciona um testo intangivel a caixa)
+
+               -->
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="20">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+           <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
