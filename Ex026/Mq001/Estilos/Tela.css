@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Estilos para tela */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header > h1 {
+    text-align: center;
+    background-color: rgb(177, 177, 177);
+}
+
+menu > ul {
+    background-color: rgb(124, 124, 124);
+}
+
+menu > ul > li {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+main {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
