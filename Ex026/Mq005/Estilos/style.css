@@ -15,36 +15,48 @@ header {
     background-color: grey;
 }
 
-h1 {
+header > h1 {
     text-align: center;
     padding: 20px;
 }
 
-/* 
-ul > li {
-    display: inline-block;
-    background-color: rgb(72, 72, 72);
-    padding: 15px;
+menu {
+    display: block;
 }
 
-a {
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
     color: white;
-} 
-*/
+    border-top: 2px solid grey;
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(116, 116, 116);
+}
 
 main {
-    display: block;
+    width: 90vw;
+    background-color: white;
     margin: auto;
-    min-width: 100px;
-    max-width: 600px;
-    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
     padding: 10px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
-ul {
-    content: url(../Imagens/cardapio.png);
-    margin: auto;
+article > h2 {
+    padding-bottom: 20px;
 }
 
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
