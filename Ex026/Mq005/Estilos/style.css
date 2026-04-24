@@ -20,8 +20,22 @@ header > h1 {
     padding: 20px;
 }
 
-menu {
+span#imen {
+    background-color: rgb(54, 54, 54);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#imen:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {

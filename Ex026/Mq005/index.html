@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="Estilos/style.css">
-    <link rel="stylesheet" href="Estilos/style2.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="imen" onclick="clickmenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,5 +29,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ex quam ut! Iste fugit perferendis voluptates totam, sunt vel modi, accusantium sapiente exercitationem est magnam iusto commodi, laboriosam earum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, beatae! Possimus fugit rerum animi molestias obcaecati cupiditate amet dolorem est nobis optio. At, dignissimos. Voluptate ratione pariatur tenetur tempore repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit repudiandae non nostrum obcaecati facilis! Quibusdam distinctio asperiores porro minus, consectetur aliquam voluptatibus omnis dolorem beatae, laborum veritatis tempore, accusantium possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt quo. Dolorem recusandae magnam itaque dolorum asperiores amet praesentium impedit totam porro, incidunt, eum molestias corporis neque. Eos, omnis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis exercitationem quibusdam ratione dolore ex unde, eum quaerat delectus fugit, explicabo corporis vel recusandae eius necessitatibus officiis minus ullam! Voluptatem, atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eos natus ad maxime, magnam libero temporibus, iusto non in itaque omnis excepturi nihil perspiciatis quisquam reprehenderit est dolor voluptate rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni eum quis doloremque autem maxime illo obcaecati quas voluptas nisi dolor tenetur ipsum in at tempora perferendis, veritatis, odio accusantium?</p>
         </article>
     </main>
+    <script>
+        function clickmenu() {
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
