@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=key" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
     <link rel="stylesheet" href="Estilos/style.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="Imagens/pexels-john-7239620 (1).jpg" alt="fundo_predio">
+                
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tenetur quia repellat, deserunt iste mollitia accusamus, exercitationem, nesciunt animi architecto fugit quae voluptatem sint sunt iure quo dolores perspiciatis consequatur.</p>
+                <p>Bem vindo, para continuar preencha as informações abaixo.</p>
                 <form action="Cadastro.php" method="post" autocomplete="on">
-                    <div>
-                        <label for="imail"><span class="material-symbols-outlined">mail</span></label>
+                    <div class="conteudo">
+                        <label for="imail"></label>
                         <input type="email" name="mail" id="imail">
                     </div>
-                    <div>
-                        <label for="isen"><span class="material-symbols-outlined">key</span></label>
+                    <div class="conteudo">
+                        <label for="isen"></label>
                         <input type="password" name="sen" id="isen">
+                    </div>
+                    <div class="botão">
+                        <input type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
