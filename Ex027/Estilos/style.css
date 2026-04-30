@@ -49,21 +49,16 @@ section#login > div#imagem {
     background-position: right bottom;
 }
 
-p {
-    padding-bottom: 10px;
-}
-
-div#formulario {
+section#login > div#formulario {
     display: block;
     padding: 10px;
 }
 
-div.conteudo {
-    background-color: #5f2c82;
-    padding: 2px 10px;
-    margin: -1px;
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-div.botão {
-    text-align: center;
+div#formulario > p {
+    font-size: 0.8em;
 }

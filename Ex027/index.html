@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="Estilos/style.css">
     <link rel="stylesheet" href="Estilos/media-query.css">
 </head>
@@ -18,15 +19,18 @@
                 <p>Bem vindo, para continuar preencha as informações abaixo.</p>
                 <form action="Cadastro.php" method="post" autocomplete="on">
                     <div class="conteudo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="mail" id="imail" autocomplete="email" required maxlength="30">
                         <label for="imail"></label>
-                        <input type="email" name="mail" id="imail">
                     </div>
                     <div class="conteudo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="sen" id="isen" autocomplete="current-password" required minlength="8" maxlength="20">
                         <label for="isen"></label>
-                        <input type="password" name="sen" id="isen">
                     </div>
                     <div class="botão">
                         <input type="submit" value="Enviar">
+                        <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                     </div>
                 </form>
             </div>
