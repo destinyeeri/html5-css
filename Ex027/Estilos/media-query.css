@@ -29,6 +29,13 @@ Grandes telas: acima de 1200px
         float: right;
         width: 70%;
     }
+
+    form input[type=email],
+    form input[type=password] {
+        width: 90%;
+        height: 30px;
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -49,5 +56,12 @@ Grandes telas: acima de 1200px
     section#login >div#formulario {
         float: right;
         width: 50%;
+    }
+
+    form input[type=email],
+    form input[type=password] {
+        width: 90%;
+        height: 30px;
+        display: inline-block;
     }
 }
