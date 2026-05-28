@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px;
+    grid-gap: 10px;
+}
+
+div#container > div {
+    font-size: 2em;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    text-align: center;
+}
